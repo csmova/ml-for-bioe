@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Final Project Guidelines &middot; Bioengr 188
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/ml-for-bioe/public/css/poole.css">
+  <link rel="stylesheet" href="/ml-for-bioe/public/css/syntax.css">
+  <link rel="stylesheet" href="/ml-for-bioe/public/css/hyde.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ml-for-bioe/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/ml-for-bioe/public/favicon.ico">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/ml-for-bioe/">
+          Bioengr 188
+        </a>
+      </h1>
+      <p class="lead">Machine learning & data-driven modeling in bioengineering</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/ml-for-bioe/">Home</a>
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/ml-for-bioe///final-project/">Final Project Guidelines</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/ml-for-bioe///">Syllabus - Winter 2019</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/ml-for-bioe///outline/">Course outline</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/ml-for-bioe///packages/">Packages</a>
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/aarmey/ml-for-bioe">GitHub project</a>
+    </nav>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Final Project Guidelines</h1>
+  <h2 id="choosing-a-topic">Choosing A Topic</h2>
+
+<p>In this project, you have two options for the general route you can take:</p>
+
+<ol>
+  <li>As a first option, you may select a bioengineering paper that implements a computational analysis we have learned about from the literature. You will reimplement this analysis with thorough testing and documentation. In your final report, you should include a discussion about any elements that presented a challenge during your reimplementation, or discrepancies you found. Lastly, you should identify a creative extension of the analysis and implement it.</li>
+  <li>Alternatively, you may identify a set of data and corresponding analysis that has not yet been performed. This can be more exploratory in nature. You will implement this analysis with testing and documentation. In your final report, you should discuss whether/how the type of data influenced the analysis that was possible, the findings and limitations of your analysis, and what might be ways to validate your findings.</li>
+</ol>
+
+<p>Some papers with material of potential interest are listed <a href="#final-project-source-ideas">here</a>. For example, a few project ideas:</p>
+
+<p>Exploratory:</p>
+<ul>
+  <li>Using the kinetic binding measurements and activities measured in <a href="http://doi.org/10.1016/j.jmb.2006.11.053">Jaks et al</a>, use PCA to describe the differences between interferons, and PLSR to predict how binding relates to activity.</li>
+  <li>Using the kinetic binding measurements and activities measured in <a href="http://doi.org/10.1016/j.jmb.2006.11.053">Jaks et al</a>, build an ODE model of receptor-ligand interaction. Based on the conclusions of the authors, predict how cells with different amounts of receptor would respond.</li>
+</ul>
+
+<p>Reimplementation:</p>
+<ul>
+  <li>Reimplement the quantitation for mutation rate from the number of stop codons in <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002251#pbio.1002251.s011">Cuevas et al</a>. Using either a Bayesian or frequentest approach, estimate the specificity of each mutation rate estimate.</li>
+  <li>Reimplement the ODE model from <a href="http://www.sciencedirect.com/science/article/pii/S2211124717303595?via%3Dihub">Kellogg et al</a>. Propose an approach to fit the model to data, given the high degree of cell-cell variation.</li>
+</ul>
+
+<p>There are no restrictions on the programming language or packages you use. While this is expected to be an individual project by default, we will consider two person teams so long as this is reflected by the scope of the project. If in a team, your proposal, final project, and final presentation should cover how the project was divided.</p>
+
+<h2 id="proposal">Proposal</h2>
+
+<p>The proposal should be less than two pages and describe the following items:</p>
+
+<ul>
+  <li>Why the topic you chose is interesting</li>
+  <li>Demonstrate that your project fits the criteria above</li>
+  <li>What overall approach do you plan to take for the project and why</li>
+  <li>Demonstrate that your project can be finished within a month</li>
+  <li>Estimate the difficulty of your project</li>
+</ul>
+
+<p><strong>We are available to discuss your ideas whenever you are ready, and you should discuss your idea with us prior to submitting your proposal.</strong> By the time you submit your proposal you should ensure that you have access to the requisite data. We are happy to help you with this.</p>
+
+<h2 id="final-report">Final Report</h2>
+
+<p>Your final report should be less than 1500 words and describe the following items:</p>
+
+<ul>
+  <li>Introduction/Motivation: Why the topic you choose is interesting, and whether similar work has been done by others (novelty will not affect your grade, but it is always good to know if other people are doing the same thing)</li>
+  <li>Problem definition: How to formulate your topic/question into a data analytics problem, and how does it relate to a broader challenge engineering a biological system</li>
+  <li>Methods
+  – Description of the algorithm you employed or designed
+  – The software package you chose or your own implementation of the algorithm
+  – How to use the software package or your own code
+  – (Optional) Charting and/or visualization that help make decisions in your analysis</li>
+  <li>Results
+  – Quantitative evaluation of your method
+  – Charting and/or visualization of your results
+  – How your proposed approach has solved your question</li>
+</ul>
+
+<p>Accompanying your final report should be a git repository of your analysis.</p>
+
+<h2 id="final-presentation">Final Presentation</h2>
+
+<p>Each presentation will have 8 minutes:</p>
+<ul>
+  <li>6 minutes for a presentation</li>
+  <li>2 minutes for questions, discussion, and transition to the next presenter</li>
+</ul>
+
+<p>Each team should prepare no more than 7 slides, including the title slide, and cover the sections listed in the final report.</p>
+
+<h2 id="grading">Grading</h2>
+
+<p>Your project will be evaluated</p>
+
+<ul>
+  <li>Proposal (15%)</li>
+  <li>Final Report (40%)</li>
+  <li>Final Presentation (15%)</li>
+  <li>Code and Implementation (30%)</li>
+</ul>
+
+<h2 id="final-project-source-ideas">Final Project Source Ideas</h2>
+
+<ul>
+  <li>Many interesting datasets are listed in the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine Learning Repository</a>.</li>
+  <li>Spangler, J. B., Moraga, I., Mendoza, J. L., &amp; Garcia, K. C. (2015). <a href="http://doi.org/10.1146/annurev-immunol-032713-120211">Insights into Cytokine–Receptor Interactions from Cytokine Engineering</a>. Annual Review of Immunology, 33(1), 139–167.</li>
+  <li>Jaks, E., Gavutis, M., Uzè, G., Martal, J., &amp; Piehler, J. (2007). <a href="http://doi.org/10.1016/j.jmb.2006.11.053">Differential Receptor Subunit Affinities of Type I Interferons Govern Differential Signal Activation</a>. Journal of Molecular Biology, 366(2), 525–539.</li>
+  <li>Raser, J. M., &amp; O’Shea, E. K. (2004). <a href="http://doi.org/10.1126/science.1098641">Control of stochasticity in eukaryotic gene expression</a>. Science, 304(5678), 1811–1814.</li>
+  <li>Cuevas, J. M., Geller, R., Garijo, R., López-Aldeguer, J., &amp; Sanjuán, R. (2015). <a href="http://doi.org/10.1371/journal.pbio.1002251">Extremely High Mutation Rate of HIV-1 In Vivo</a>. PLoS Biol, 13(9), e1002251–19.</li>
+  <li>Almendro, V., Cheng, Y.-K., Randles, A., Itzkovitz, S., Marusyk, A., Ametller, E., et al. (2014). Inference of Tumor Evolution during Chemotherapy by Computational Modeling and In Situ Analysis of Genetic and Phenotypic Cellular Diversity. Cell Reports, 1–14. http://doi.org/10.1016/j.celrep.2013.12.041</li>
+  <li>Jensen, K. J., Moyer, C. B., &amp; Janes, K. A. (2016). <a href="http://doi.org/10.1016/j.cels.2016.01.012">Network Architecture Predisposes an Enzyme to Either Pharmacologic or Genetic Targeting</a>. Cell Systems, 2(2), 112–121.</li>
+  <li>Ryan A. Kellogg, Chengzhe Tian, Martin Etzrodt, Savaş Tay, <a href="http://dx.doi.org/10.1016/j.celrep.2017.03.027">Cellular Decision Making by Non-Integrative Processing of TLR Inputs</a>, Cell Reports, Volume 19, Issue 1, 2017, Pages 125-135, ISSN 2211-1247.</li>
+</ul>
+
+</div>
+
+    </div>
+
+  </body>
+</html>
